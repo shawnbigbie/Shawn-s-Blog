@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="DGM Blog">
+  <meta name="author" content="Shawn Bigbie">
+
+  <title>Shawn's Blog - JavaScript Basics</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="icon" href="img/fav.jpg.png" sizes="16x16" type="image/png">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="img/fav.jpg.png" style="height: 50px;"></a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html" style="color: white;">Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html" style="color: white;">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html" style="color: white;">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('img/pexels-photo.jpeg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>JavaScript Basics</h1>
+            <h2 class="subheading">Functions, Objects, and Arrays</h2>
+            <span class="meta">Posted by
+              <a href="about.html">Shawn Bigbie</a>
+              on August 28, 2020</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <h2 class="section-heading">What is JavaScript?</h2>
+
+          <p>
+            JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.
+          </p>
+
+          <p>
+            The lastest Version of JS is ES6 for now and added the features below:
+          </p>
+          <ul>
+            <li>let and const</li>
+            <li>default parameter values</li>
+            <li>Added Array.find()</li>
+            <li>Array.findIndex()</li>
+            <li>exponential operator (**)</li>
+            <li>new Object properties</li>
+            <li>Async functions</li>
+          </ul>
+
+          <h2 class="section-heading">What are functions in Javascript</h2>
+
+          <p>
+            A JavaScript function is a block of code designed to perform a particular task. The JavaScript function is executed when "something" invokes it (calls it).
+          </p>
+
+          <img class="img-fluid" src="img/js1.png" alt="breakdown">
+
+          <p>
+            <b>How are they used and defined?</b>
+              A JavaScript function is defined with the <b style="color:red;">function</b> keyword, followed by a name, followed by parentheses ().
+
+            <p>
+              Function names can contain letters, digits, underscores, and dollar signs (same rules as variables).
+            </p>
+
+            <p>
+              The parentheses may include parameter names separated by commas:
+              (parameter1, parameter2, ...)
+            </p>
+
+            <p>
+              The code to be executed, by the function, is placed inside curly brackets: {}
+            </p>
+
+            <img class="img-fluid" src="img/js5.png" alt="breakdown">
+
+            <p>
+              Function parameters are listed inside the parentheses () in the function definition.
+            </p>
+            
+            <p>
+              Function arguments are the values received by the function when it is invoked.
+            </p>
+
+            <p>
+              Inside the function, the arguments (the parameters) behave as local variables.
+            </p>
+            
+            <p>
+              <b>What is a callback function?</b>
+            </p>
+
+            <p>
+              A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action.
+            </p>
+
+            <p>
+              <b>How do you use promises in functions?</b>
+            </p>
+
+            <p>
+              To use a promise it may be in one of 3 possible states: <b style="color:red;">fulfilled</b>, <b style="color:red;">rejected</b>, or <b style="color:red;">pending</b>. Promise users can attach callbacks to handle the fulfilled value or the reason for rejection. Promises are eager, meaning that a promise will start doing whatever task you give it as soon as the promise constructor is invoked.
+            </p>
+          </p>
+
+          <h2 class="section-heading">What are objects in Javascript</h2>
+
+          <p>
+            Like in real life, a car is an <b style="color:red;">object</b>.
+            A car has <b style="color:red;">properties</b> like weight and color, and <b style="color:red;">methods</b> like start and stop:
+            
+            <img class="img-fluid" src="img/js2.PNG" alt="breakdown">
+            
+          </p>
+
+          <p>
+            All cars have the same <b style="color:red;">properties</b>, but the property <b style="color:red;">values</b> differ from car to car.
+            All cars have the same <b style="color:red;">methods</b>, but the methods are performed <b style="color:red;">at different times</b>.
+          </p>
+
+          <p>
+            <b>How are they used and defined?</b>
+          </p>
+
+          <p>
+            You define (and create) a JavaScript object with an object literal:
+          </p>
+
+          <img class="img-fluid" src="img/js3.PNG" alt="breakdown">
+
+          <p>
+            You can also do it this way since spaces and line breaks are not important. An object definition can span multiple lines:
+          </p>
+          
+          <img class="img-fluid" src="img/js3.2.PNG" alt="breakdown">
+
+          <p>
+            <b>How do you loop through an object?</b>
+          </p>
+
+          <p>
+            The best way to loop through objects is to convert the object into an array. Then, you loop through the array.
+          </p>
+
+          <h2 class="section-heading">What are Arrays in Javascript</h2>
+
+          <p>
+            JavaScript arrays are used to store multiple values in a single variable.
+          </p>
+
+          <p>
+            An array is a special variable, which can hold more than one value at a time.
+            If you have a list of items (a list of car names, for example), storing the cars in single variables could look like this:
+          </p>
+
+          <img class="img-fluid" src="img/js4.PNG" alt="breakdown">
+
+          <p>
+            <b>How are they used and defined?</b>
+          </p>
+          
+          <p>
+            Using an array literal is the easiest way to create a JavaScript Array.
+          </p>
+
+          <img class="img-fluid" src="img/js6.PNG" alt="breakdown">
+
+          <p>
+            <b>How can you loop though an array?</b>
+          </p>
+
+          <p>
+            JavaScript supports different kinds of loops:
+            <ul>
+              <li><b style="color:red;">for</b> - loops through a block of code a number of times</li>
+              <li><b style="color:red;">for/in</b> - loops through the properties of an object</li>
+              <li><b style="color:red;">for/of</b> - loops through the values of an iterable object</li>
+              <li><b style="color:red;">while</b> - loops through a block of code while a specified condition is true</li>
+              <li><b style="color:red;">do/while</b> - also loops through a block of code while a specified condition is true</li>
+            </ul>
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+   <!-- Footer -->
+ <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <ul class="list-inline text-center">
+          <li class="list-inline-item">
+            <a href="https://twitter.com/ShawnBigbie">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com/shawn.bigbie">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://github.com/shawnbigbie">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+        </ul>
+        <p class="copyright text-muted">Copyright &copy; Shawn Bigbie, 2020</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/style.min.js"></script>
+
+</body>
+
+</html>
