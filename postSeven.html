@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="DGM Blog">
+  <meta name="author" content="Shawn Bigbie">
+
+  <title>Shawn's Blog - Todo App Backend</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="icon" href="img/fav.jpg.png" sizes="16x16" type="image/png">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="img/fav.jpg.png" style="height: 50px;"></a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html" style="color: black;">Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html" style="color: black;">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html" style="color: black;">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('img/cleanheader.jpeg');">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Todo App Backend</h1>
+            <span class="meta">Posted by
+              <a href="about.html">Shawn Bigbie</a>
+              on Oct 28th, 2020</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <h2 class="section-heading">How did you design and architect your app and server?</h2>
+
+          <p>
+            I decied to change the layout and architect of my app to better fit the project also expand my skills that I wanted to test out like passport and express session.
+          </p>
+
+          <img class="img-fluid" src="img/todoapphome.PNG" alt="homepage">
+
+          <p>
+            The design I choosed was a modern and simplicity for the user not to get to confussed and feel like the design was over done or unpleasant. To do this style and layout I used bootstrap to save time remakeing the whole design and layout from my last run at the todo app project.
+          </p>
+          
+          <img class="img-fluid" src="img/todoapplogin.PNG" alt="loginpage">
+
+          <p>
+             I added the authentication for users and for each user to create an account for privacy since I thought about if the list was something that they dident want everyone to see or even if they just wanted it to be personal they could have that benefit.
+          </p>
+
+          <img class="img-fluid" src="img/todoappregistration.PNG" alt="createloginpage">
+
+          <p>
+            They can create an account real easy that will be stored on the database with the todo data that they add to their account.
+          </p>
+
+          <h2 class="section-heading">How did the front end connect to the backend?</h2>
+
+          <img class="img-fluid" src="img/mongoDB.png" alt="mongoDB">
+
+          <p>
+            For the backend of the app I picked mongodb hosted on atlas with mongoose, then had my api and routes built within the app compare to fetching the todo api and hosting it separate. I also used handlebars for the views and front-end to display the data.
+          </p>
+
+          <img class="img-fluid" src="img/todolayoutcode.PNG" alt="codesnip">
+
+          <p>
+            for the front-end communicating to the database used mongoose and modules to store the todo and user infomation.
+          </p>
+
+          <img class="img-fluid" src="img/todomodel.PNG" alt="todomodel">
+
+          <img class="img-fluid" src="img/usermodel.PNG" alt="usermodel">
+
+          <h2 class="section-heading">Why did you choose the design you did?</h2>
+
+          <p>
+            I choose to design the app the way I did to have it be able to expand and be more then a todo list in the future. Since there is the authentication added to this and users this extends the use of this todo app not only be a list but could be infomation tables or a shopping cart if needed.
+          </p>
+          
+          <img class="img-fluid" src="img/addtodo.PNG" alt="addtodo">
+
+          <h2 class="section-heading">How did you model you data and why?</h2>
+
+          <p>
+            I decided to have the catagory be apart of the todo model instead of it being a separate model since it wouldn't been worth the while to make all of that. You could instead just add a search filter to filter throw the catagory data with out it being stored in the database as its separate data point.
+          </p>
+
+          <img class="img-fluid" src="img/todoapplist.PNG" alt="loginhomepage">
+
+          <h2 class="section-heading">What makes good documentation?</h2>
+
+          <ul>
+            <li>Never assume users knwo what you are talking about</li>
+            <li>Follow the standard, such as terminology and describe each step simplified</li>
+            <li>Add Graphical elements and Visual Design</li>
+            <li>Sectioning</li>
+            <li>Revise and Update</li>
+          </ul>
+
+          <h2 class="section-heading">Why is documentation important?</h2>
+
+          <p>
+            Documentation is important for lots of reasons, even throw if you have ever done documentation, you’d agree with me that it is pretty much the least favorite things for developers to do.
+          </p>
+
+          <p>
+            One of the main reasons why it is so important is because of Good Documentation Helps Users. Documentation helps users and other developers understand how the code work and yourself when you look back on past projects or code when you need the help or to create something really close to something you already have made. There are tons of greate documentation examples like <a href="http://getbootstrap.com/css/">Bootstrap's</a> or <a href="https://support.squarespace.com/hc/en-us/articles/206756327">SquareSpace</a>.
+          </p>
+
+          <p>
+            If you want to see the application or test it out yourself <a href="https://tasktracker123.herokuapp.com/users/login">Click Here</a>.
+          </p>
+
+          <p>Test account infomation is email: test@gmail.com and password: test</p>
+
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+   <!-- Footer -->
+ <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <ul class="list-inline text-center">
+          <li class="list-inline-item">
+            <a href="https://twitter.com/ShawnBigbie">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com/shawn.bigbie">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://github.com/shawnbigbie">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+        </ul>
+        <p class="copyright text-muted">Copyright &copy; Shawn Bigbie, 2020</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/style.min.js"></script>
+
+</body>
+
+</html>
